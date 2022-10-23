@@ -2,12 +2,14 @@
 <html>
 <head>
     <title>Test App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <script type="text/javascript">
         contextPath = "${request.contextPath}";
     </script>
     <asset:stylesheet src="bootstrap.css"/>
     <asset:javascript src="jquery-3.5.1.js"/>
+
 </head>
 
 <body>
@@ -24,15 +26,17 @@
     </ul>
 </div>
 
+<hr>
+
 <div style="text-align: center" class="text-success p-5">
     <label>
         <input type="text" id="new-msg" class="form-control" placeholder="Add new Message"/>
     </label>
 </div>
 
-<div style="text-align: center;" class="text-center p-5">
+<div style="text-align: center;" class="text-center p-1">
     <button type="button" id="save-new-msg-btn" class="btn btn-outline-success">Save</button>
-    <button id="create-new-error-btn" style="margin-left: 8rem" type="button"
+    <button id="create-new-error-btn" style="margin-left: 4rem" type="button"
             class="btn btn-outline-danger">Create Error to make log</button>
 </div>
 </body>
